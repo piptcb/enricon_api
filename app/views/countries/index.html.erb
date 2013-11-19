@@ -1,0 +1,23 @@
+ <h1> Countries Listing </h1>
+ 	<table class="table table-striped"> 
+ 	<thead>
+ 		<tr>
+ 			<th>No</th>
+ 			<th>Country Name </th>
+ 			<th>Country Code </th>
+ 			<th>Download Holiday</th>
+ 		</tr>
+ 	</thead> 
+ 	<tbody>
+ 		<% i = 0 %>
+ 		<% @countries.each do |country|%>  
+ 			<tr>
+ 				<td><%= i = i+ 1 %></td>
+ 				<td><%= country.country_name %></td>
+ 				<td><%= country.country_code %></td>
+ 				<td><%= button_download_show_holidays_for country%></td>		
+ 			</tr>
+  		<% end %> 
+     </tbody>
+ 	</table> 
+ 

@@ -1,0 +1,24 @@
+<h1> Public holidays in <%= @country.country_name %>
+<%= link_to "All Countries", countries_path, :class => "btn btn-default pull-right" %> </h1>  
+
+<table class="table table-striped"> 
+<thead>
+	<th>No</th>
+	<th>Name</th>
+	<th>Start At</th>
+</thead>
+
+<tbody>
+	<% i =0%>
+	<% @holidays.each do |holiday|%>		
+	<tr>
+		<td><%= i = i+1 %></td>
+		<td><%= holiday.name %></td>
+		<td><%= holiday.start_at%></td>
+	</tr>
+	<% end %>
+</tbody>
+
+</table> 
+
+   

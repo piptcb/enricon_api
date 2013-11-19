@@ -1,0 +1,19 @@
+<div class="navbar navbar-inverse ">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Home", root_path%></li>
+        <li><%= link_to "Google", country_path("google")%></li>
+        <li><%= link_to "Enrico", country_path("enrico")%></li>
+        <li><%= link_to "Daybase", country_path("daybase")%></li>
+      </ul>
+    </div><!-- /.nav-collapse -->
+  </div><!-- /.container --> 
+</div>
